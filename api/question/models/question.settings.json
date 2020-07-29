@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "Question"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "asker": {
+      "type": "string"
+    },
+    "tweetUrl": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "time"
+    },
+    "episode": {
+      "model": "episode",
+      "via": "questions"
+    }
+  }
+}
