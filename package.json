@@ -1,9 +1,10 @@
 {
-  "name": "cms-askedatp",
+  "name": "askatp-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "The CMS for askatp.fm",
   "scripts": {
+    "dev": "strapi develop",
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
@@ -23,7 +24,7 @@
     "strapi-utils": "3.1.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Brendon Reyell"
   },
   "strapi": {
     "uuid": "20fbe57a-c1a6-4f66-b197-d019a5d8d3d4"
