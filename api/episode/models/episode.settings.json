@@ -20,14 +20,15 @@
       "required": true
     },
     "overcastSlug": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "releaseDate": {
       "type": "date"
     },
     "questions": {
-      "via": "episode",
-      "collection": "question"
+      "collection": "question",
+      "via": "episode"
     }
   }
 }

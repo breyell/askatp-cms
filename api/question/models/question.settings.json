@@ -20,8 +20,8 @@
       "type": "string"
     },
     "episode": {
-      "model": "episode",
-      "via": "questions"
+      "via": "questions",
+      "model": "episode"
     },
     "timestamp": {
       "type": "string",
