@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "questions",
   "info": {
-    "name": "Question"
+    "name": "Question",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -20,12 +22,12 @@
       "type": "string"
     },
     "episode": {
-      "via": "questions",
-      "model": "episode"
+      "model": "episode",
+      "via": "questions"
     },
     "timestamp": {
       "type": "string",
-      "regex": "/^([0-9]):([0-5][0-9]):([0-5][0-9])$"
+      "regex": "^([0-9]):([0-5][0-9]):([0-5][0-9])$"
     }
   }
 }

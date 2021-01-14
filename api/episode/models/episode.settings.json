@@ -27,8 +27,8 @@
       "type": "date"
     },
     "questions": {
-      "collection": "question",
-      "via": "episode"
+      "via": "episode",
+      "collection": "question"
     }
   }
 }
