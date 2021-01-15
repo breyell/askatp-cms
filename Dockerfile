@@ -4,9 +4,11 @@ WORKDIR /
 
 COPY ./package.json ./
 
-RUN yarn
+COPY ./yarn.lock ./
 
 ENV NODE_ENV production
+
+RUN yarn --frozen-lockfile
 
 RUN yarn build
 
