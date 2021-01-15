@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "episodes",
   "info": {
-    "name": "Episode"
+    "name": "Episode",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "number": {
@@ -24,11 +26,12 @@
       "unique": true
     },
     "releaseDate": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "questions": {
-      "via": "episode",
-      "collection": "question"
+      "collection": "question",
+      "via": "episode"
     }
   }
 }
