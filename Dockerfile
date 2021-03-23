@@ -2,9 +2,7 @@ FROM strapi/base
 
 WORKDIR /
 
-COPY ./package.json ./
-
-COPY ./yarn.lock ./
+COPY package.json yarn.lock ./
 
 ENV NODE_ENV production
 
